@@ -58,7 +58,7 @@ namespace CorePerformance
                 });
 
                 Console.WriteLine(resultVerification1 + " in " + DateTime.Now.Subtract(start).TotalMilliseconds + " with " + _cacheHits + " cache hits. " 
-                    + _keyInCacheCount + " keys were already th cache when trying to add");
+                    + _keyInCacheCount + " cache key adds rejected");
 
                 _alreadyProcessedCache.Clear();
                 _cacheHits = 0;
@@ -71,7 +71,7 @@ namespace CorePerformance
                 });
 
                 Console.WriteLine(resultVerification2 + " in " + DateTime.Now.Subtract(start).TotalMilliseconds + " with " + _cacheHits + " cache hits. "
-                    + _keyInCacheCount + " keys were already th cache when trying to add");
+                    + _keyInCacheCount + " cache key adds rejected");
 
                 return resultVerification1 - resultVerification2;
 
