@@ -3,3 +3,7 @@
 ################################################################################
 
 /bin/Debug/netcoreapp2.0
+/obj
+/Data.bin
+/.vs/CorePerformance/v15
+/CorePerformance.sln
