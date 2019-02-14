@@ -65,6 +65,8 @@ namespace CorePerformance
                 _keyInCacheCount = 0;
                 start = DateTime.Now;
 
+                //this will fall through and threads are still running
+                //there's some syntax i'm missing... like an await somewhere
                 numbersToProcess.ForEach(async num =>
                 {
                     resultVerification2 = resultVerification2 + await LookupNumber(num);
